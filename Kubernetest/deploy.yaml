@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: sibasish934/code-sync:13
+          image: sibasish934/code-sync:14
           ports:
             - containerPort: 5000
       #     volumeMounts:

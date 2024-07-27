@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  labels:
+    app: code-sync-app
+    version: v1
+    istio: monitor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: code-sync-app
+      version: v1
+      istio: monitor
+  template:
+    metadata:
+      labels:
+        app: code-sync-app
+        version: v1
+        istio: monitor
+    spec:
+      containers:
+      - name: backend
+        image: sibasish934/code-sync:v5
+        ports:
+        - containerPort: 5000

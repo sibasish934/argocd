@@ -5,11 +5,10 @@ metadata:
   # annotations:
   #   alb.ingress.kubernetes.io/healthcheck-path: /user
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: socket-io-app
   ports:
     - name: http
       port: 5000
       targetPort: 5000
-      nodePort: 30007

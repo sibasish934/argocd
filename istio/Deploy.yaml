@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: sibasish934/code-sync:9
+        image: sibasish934/code-sync:10
         ports:
         - containerPort: 5000
 
@@ -49,6 +49,6 @@ spec:
 #     spec:
 #       containers:
 #       - name: backend
-#         image: sibasish934/code-sync:9
+#         image: sibasish934/code-sync:10
 #         ports:
 #         - containerPort: 5000
